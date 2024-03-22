@@ -9,7 +9,7 @@ FROM typesense/typesense:0.25.2 AS base
 # RUN chmod +x /usr/local/bin/script.sh
 
 # Configuración predeterminada (reemplaza TuClaveAPI con tu clave API real)
-CMD ["--data-dir", "/data", "--api-key", "bernalux", "--enable-search-analytics=true", "--analytics-flush-interval=60"]
+CMD ["--data-dir", "/data", "--api-key", "bernalux", "--enable-search-analytics", "data", "--analytics-flush-interval", "60"]
 
 # Expone el puerto 8108
 EXPOSE 8108
